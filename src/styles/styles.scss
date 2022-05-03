@@ -1,0 +1,109 @@
+a {
+    cursor: pointer;
+    color: white;
+
+    &:hover {
+        color: azure;
+    }
+}
+
+#deleteUser {
+    color: rgba(196, 83, 83, 0.751);
+}
+
+li {
+    list-style: none;
+}
+
+.form-control {
+    width: 50%;
+}
+
+.help-block {
+    font-size: 12px;
+}
+
+.adminPanel {
+    text-decoration: solid;
+    padding-bottom: 15px;
+}
+
+.panel-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.homePage-main {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    border: 2px solid;
+    border-radius: 10px;
+    height: 100%;
+    padding: 45px;
+}
+
+.app-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    color: black;
+    background-image: linear-gradient(#C1DEAE, #FFAB76);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid;
+    border-radius: 10px;
+    height: 450px;
+    padding: 45px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    border-radius: 10px;
+    height: 365px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 500px;
+}
+
+.alert {
+    display: flex;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 28px;
+
+    .form-control {
+        width: 70%;
+        margin-left: 50px;
+    }
+}
+
+#app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
