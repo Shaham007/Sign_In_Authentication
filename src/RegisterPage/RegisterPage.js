@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { userActions } from '../_actions';
+import { currentTime } from './../_helpers/utils'
 
 class RegisterPage extends React.Component {
     constructor(props) {
@@ -12,7 +13,8 @@ class RegisterPage extends React.Component {
                 firstName: '',
                 lastName: '',
                 email: '',
-                password: ''
+                password: '',
+                registerTime: '',
             },
             submitted: false
         };
@@ -38,7 +40,8 @@ class RegisterPage extends React.Component {
         const { user } = this.state;
         const { dispatch } = this.props;
         if (user.firstName && user.lastName && user.email && user.password) {
-            dispatch(userActions.register(user));
+            let updatedUser = { ...user, registerTime: currentTime() }
+            dispatch(userActions.register(updatedUser));
         }
     }
 

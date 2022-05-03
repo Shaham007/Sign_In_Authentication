@@ -52,16 +52,16 @@ class HomePage extends React.Component {
                                 <td>{x.firstName + ' ' + x.lastName}</td>
                                 <td>{x.email}</td>
                                 <td>{x.lastLogin}</td>
-                                <td>{x.lastLogin}</td>
+                                <td>{x.registerTime}</td>
                                 <td>{user.id === x.id ?
                                     <span style={{ color: "green" }}>Active</span>
                                     : <span style={{ color: "red" }}>Not Active</span>}
                                 </td>
                                 <td>
-                                    {x.deleting ? <em> - Deleting...</em>
+                                   {x.deleting ? <em> - Deleting...</em>
                                         : x.deleteError ? <span className="text-danger"> - ERROR: {x.deleteError}</span>
                                             : <span> - <a id='deleteUser' onClick={this.handleDeleteUser(x.id)}>Delete User</a></span>}
-                                </td>
+                                 </td>
                             </tr>
                         )}
                     </tbody>
